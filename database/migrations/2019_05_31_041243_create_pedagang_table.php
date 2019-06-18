@@ -15,6 +15,7 @@ class CreatePedagangTable extends Migration
     {
         Schema::create('pedagang', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('nama');
             $table->unsignedBigInteger('pasar_id');
             $table->timestamps();
 
